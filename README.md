@@ -2,11 +2,7 @@
 
 QuickTranslate is a simple Electron application that allows you to quickly translate clipboard content. It utilizes Google Translate for the translation.
 
-## Features
 
-- Automatically detects changes in the clipboard and translates the content.
-- Shows both the original clipboard content and the translated text side by side.
-- Minimalistic user interface.
 
 ## Getting Started
 
