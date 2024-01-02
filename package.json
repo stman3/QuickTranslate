@@ -1,0 +1,34 @@
+{
+  "name": "quicktranslate",
+  "version": "1.0.0",
+  "description": "QuickTranslate is a simple Electron application that allows you to quickly translate clipboard content. It utilizes Google Translate for the translation.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stman3/QuickTranslate.git"
+  },
+  "author": "stman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stman3/QuickTranslate/issues"
+  },
+  "homepage": "https://github.com/stman3/QuickTranslate#readme",
+  "devDependencies": {
+    "@electron-forge/cli": "^7.2.0",
+    "@electron-forge/maker-deb": "^7.2.0",
+    "@electron-forge/maker-rpm": "^7.2.0",
+    "@electron-forge/maker-squirrel": "^7.2.0",
+    "@electron-forge/maker-zip": "^7.2.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.2.0",
+    "electron": "^28.1.0"
+  },
+  "dependencies": {
+    "@iamtraction/google-translate": "^2.0.1",
+    "electron-squirrel-startup": "^1.0.0"
+  }
+}

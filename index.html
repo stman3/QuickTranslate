@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>QuickTranslate</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+        color: #333;
+        display: flex;
+        height: 100vh;
+        justify-content: flex-end;
+        align-items: flex-start;
+      }
+
+      #content-wrapper {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+      }
+
+      #clipboard-box,
+      #translated-box {
+        flex: 1;
+        padding: 20px;
+        box-sizing: border-box;
+        overflow-y: auto; /* Add this line to enable vertical scrollbar */
+      }
+
+      #clipboard-box {
+        background-color: #fff;
+        border-radius: 8px 0 0 8px;
+      }
+
+      #translated-box {
+        background-color: #f1f1f1;
+        border-radius: 0 8px 8px 0;
+      }
+
+      #clipboard-content,
+      #translated-content {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      #clipboard-text,
+      #translated-text {
+        font-size: 14px;
+        color: #1a73e8;
+      }
+
+      /* Hide the window controls */
+      .electron-drag-region {
+        -webkit-app-region: no-drag;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content-wrapper" class="electron-drag-region">
+      <div id="clipboard-box">
+        <p id="clipboard-content">
+          <strong>Clipboard Content:</strong>
+        </p>
+        <p id="clipboard-text"></p>
+      </div>
+      <div id="translated-box">
+        <p id="translated-content">
+          <strong>Translated Text:</strong>
+        </p>
+        <p id="translated-text"></p>
+      </div>
+    </div>
+  </body>
+</html>
